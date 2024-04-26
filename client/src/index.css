@@ -4,7 +4,7 @@
 
 @layer components {
     .tab-title {
-        @apply mb-2 w-full border-b pb-2 text-start text-lg;
+        @apply w-full pb-2 mb-2 text-lg border-b text-start;
     }
 }
 

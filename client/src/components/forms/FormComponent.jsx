@@ -77,16 +77,17 @@ function FormComponent() {
 
     return (
         <div className="flex w-full max-w-[500px] flex-col items-center justify-center gap-4 p-4 sm:w-[500px] sm:p-8">
-            <h1 className="text-4xl sm:text-5xl">Code Sync</h1>
+            <h1 className="text-4xl sm:text-5xl">BuddyCode</h1>
             <p className="mb-4 text-center md:mb-8">
-                {"Code, Chat, Collaborate. It's All in Sync."}
+            {"Code, Chat, Collaborate. It's All in Sync."} <br/> {"Made with ♥ by TechWithJoshi"}
             </p>
-            <form onSubmit={joinRoom} className="flex w-full flex-col gap-4">
+            
+            <form onSubmit={joinRoom} className="flex flex-col w-full gap-4">
                 <input
                     type="text"
                     name="roomId"
                     placeholder="Room Id"
-                    className="w-full rounded-md border border-gray-500 bg-darkHover px-3 py-3 focus:outline-none"
+                    className="w-full px-3 py-3 border border-gray-500 rounded-md bg-darkHover focus:outline-none"
                     onChange={handleInputChanges}
                     value={currentUser.roomId}
                 />
@@ -94,20 +95,20 @@ function FormComponent() {
                     type="text"
                     name="username"
                     placeholder="Username"
-                    className="w-full rounded-md border border-gray-500 bg-darkHover px-3 py-3 focus:outline-none"
+                    className="w-full px-3 py-3 border border-gray-500 rounded-md bg-darkHover focus:outline-none"
                     onChange={handleInputChanges}
                     value={currentUser.username}
                     ref={usernameRef}
                 />
                 <button
                     type="submit"
-                    className="mt-2 w-full rounded-md bg-primary px-8 py-3 text-lg font-semibold text-black"
+                    className="w-full px-8 py-3 mt-2 text-lg font-semibold text-black rounded-md bg-primary"
                 >
                     Join
                 </button>
             </form>
             <button
-                className="cursor-pointer select-none underline"
+                className="underline cursor-pointer select-none"
                 onClick={createNewRoomId}
             >
                 Generate Unique Room Id

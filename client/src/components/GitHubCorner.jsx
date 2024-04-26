@@ -20,7 +20,7 @@ function GitHubCorner() {
                 width="150"
                 height="100"
                 viewBox="0 0 250 250"
-                className="absolute right-0 top-0 z-10 border-none bg-primary text-gray-900 dark:text-gray-100"
+                className="absolute top-0 right-0 z-10 text-gray-900 border-none bg-primary dark:text-gray-100"
                 aria-hidden="true"
                 style={{
                     color: "#151513",
