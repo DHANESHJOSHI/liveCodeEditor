@@ -6,7 +6,7 @@ import { createContext, useCallback, useEffect, useMemo } from "react"
 import { toast } from "react-hot-toast"
 import { io } from "socket.io-client"
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL
+const BACKEND_URL = "ws://15.206.153.253:3000"
 
 const SocketContext = createContext()
 
