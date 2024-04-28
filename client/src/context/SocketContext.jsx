@@ -6,7 +6,7 @@ import { createContext, useCallback, useEffect, useMemo } from "react"
 import { toast } from "react-hot-toast"
 import { io } from "socket.io-client"
 
-const BACKEND_URL = "https://bug-free-space-enigma-6ww7v77w95qh9j-3000.app.github.dev/"
+const BACKEND_URL = "http://3.110.157.177:3000/"
 
 const SocketContext = createContext()
 
