@@ -81,7 +81,13 @@ function FormComponent() {
             <p className="mb-4 text-center md:mb-8">
             {"Code, Chat, Collaborate. It's All in Sync."} <br/> {"Made with ♥ by TechWithJoshi"}
             </p>
-            
+            <p className="mt-[-5%] mb-4 text-center md:mb-0">
+            <details><summary>Steps To Use this app</summary>
+                <li>Go to This <a href="https://3.110.157.177:3000/" target="_blank" rel="noreferrer"><u><b>Link</b></u> </a>
+                    and allow server to access the site</li>
+                        <li>It will Show <b>Your connection is not private</b></li>
+                        <li>Click On Advance Then Click <b> Proceed to 3.110.157.177 (unsafe)</b></li>
+            </details></p>
             <form onSubmit={joinRoom} className="flex flex-col w-full gap-4">
                 <input
                     type="text"

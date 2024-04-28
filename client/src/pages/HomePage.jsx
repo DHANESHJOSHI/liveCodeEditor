@@ -12,7 +12,10 @@ function HomePage() {
                         alt="BuddyCode Illustration"
                         className="mx-auto w-[250px] sm:w-[400px]"
                     />
+                    
+                
                 </div>
+             
                 <div className="flex items-center justify-center w-full sm:w-1/2">
                     <FormComponent />
                 </div>
